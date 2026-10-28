@@ -96,8 +96,6 @@ This screenshot shows the custom 404 page displayed when a nonexistent route is 
 
 ![Custom 404 Page](documentation/404error.png)
 
-
-
 ## Conclusion
 
 The TikTalk project demonstrates the implementation of a WebSocket-based chat application using Bonezegei and web technologies. It provides practical experience in server execution, client connections, real-time message broadcasting, and web interface customization.
