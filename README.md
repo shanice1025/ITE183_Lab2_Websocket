@@ -1,6 +1,6 @@
-# TikTalk - Simple WebSocket Chat App
+# TikTalk - Simple WebSocket Chat Server
 
-**Developed by:** Shanice P. Congson
+**By:** Shanice P. Congson
 
 ## Project Overview
 
@@ -21,16 +21,26 @@ This project demonstrates how a WebSocket server handles client connections, rec
 
 ```text
 ITE183_Lab2_Websocket/
+│
+├── lib/
+│   └── http.bzg
+│
+├── public/
+│   ├── index.html
+│   └── 404.html
+│
+├── documentation/
+│   ├── bzgversion.png
+│   ├── terminalrun.png
+│   ├── realtime.png
+│   └── 404error.png
+│
 ├── .gitattributes
 ├── .gitignore
-├── LICENSE
-├── README.md
 ├── app.bzg
+├── LICENSE
 ├── package.json
-├── lib/
-└── public/
-    ├── index.html
-    └── 404.html
+└── README.md
 ```
 
 ## Installation and Execution
