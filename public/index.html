@@ -68,7 +68,7 @@
     </div>
 
     <script>
-        const wsUrl = "ws://localhost:8000";
+        const wsUrl = (location.protocol === "https:" ? "wss://" : "ws://") + location.host;
         const socket = new WebSocket(wsUrl);
 
         const status = document.getElementById("status");
