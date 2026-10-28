@@ -2,11 +2,148 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>404 - Page Not Found</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found | TikTalk</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Pacifico&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --sage: #879b80;
+      --sage-dark: #657a60;
+      --sage-light: #dce5d7;
+      --cream: #faf8f0;
+      --white: #ffffff;
+      --text: #394438;
+      --muted: #7b8577;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      padding: 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: var(--cream);
+      color: var(--text);
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .error-card {
+      width: 100%;
+      max-width: 480px;
+      padding: 44px 28px;
+      text-align: center;
+      background: var(--white);
+      border: 1px solid #e2e7dc;
+      border-radius: 26px;
+      box-shadow: 0 12px 40px rgba(75, 94, 69, 0.10);
+    }
+
+    .bunny {
+      margin: 0 auto 12px;
+    }
+
+    .bunny svg {
+      width: 100px;
+      height: 100px;
+    }
+
+    .brand {
+      margin: 0;
+      color: var(--sage-dark);
+      font-family: 'Pacifico', cursive;
+      font-size: 38px;
+      font-weight: 400;
+    }
+
+    .error-code {
+      margin: 26px 0 8px;
+      color: var(--sage);
+      font-size: 64px;
+      font-weight: 700;
+      line-height: 1;
+    }
+
+    h2 {
+      margin: 12px 0;
+      font-size: 22px;
+      font-weight: 600;
+    }
+
+    .description {
+      max-width: 340px;
+      margin: 0 auto 26px;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.8;
+    }
+
+    .home-button {
+      display: inline-block;
+      padding: 13px 24px;
+      border-radius: 25px;
+      background: var(--sage);
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+      transition: background 0.2s, transform 0.2s;
+    }
+
+    .home-button:hover {
+      background: var(--sage-dark);
+      transform: translateY(-2px);
+    }
+
+    .footer {
+      margin-top: 28px;
+      color: #a0a89a;
+      font-size: 11px;
+    }
+  </style>
 </head>
+
 <body>
-    <h1>404 - Page Not Found</h1>
-    <p>The requested resource could not be found on this server.</p>
+  <main class="error-card">
+    <div class="bunny">
+      <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Bunny">
+        <ellipse cx="37" cy="27" rx="12" ry="25" transform="rotate(-15 37 27)" fill="#fffdf5" stroke="#879b80" stroke-width="3"/>
+        <ellipse cx="63" cy="27" rx="12" ry="25" transform="rotate(15 63 27)" fill="#fffdf5" stroke="#879b80" stroke-width="3"/>
+        <ellipse cx="37" cy="27" rx="5" ry="16" transform="rotate(-15 37 27)" fill="#e9b9b7"/>
+        <ellipse cx="63" cy="27" rx="5" ry="16" transform="rotate(15 63 27)" fill="#e9b9b7"/>
+        <circle cx="50" cy="57" r="30" fill="#fffdf5" stroke="#879b80" stroke-width="3"/>
+        <circle cx="40" cy="54" r="3" fill="#394438"/>
+        <circle cx="60" cy="54" r="3" fill="#394438"/>
+        <ellipse cx="32" cy="63" rx="6" ry="4" fill="#efc5bf"/>
+        <ellipse cx="68" cy="63" rx="6" ry="4" fill="#efc5bf"/>
+        <path d="M46 62 Q50 67 54 62" fill="none" stroke="#394438" stroke-width="2.5" stroke-linecap="round"/>
+        <path d="M50 66 L50 69" stroke="#394438" stroke-width="2" stroke-linecap="round"/>
+        <path d="M42 72 Q50 79 58 72" fill="none" stroke="#394438" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </div>
+
+    <h1 class="brand">TikTalk</h1>
+
+    <div class="error-code">404</div>
+    <h2>Oops! Page not found.</h2>
+
+    <p class="description">
+      Looks like this page hopped away. The link may be incorrect,
+      or the page might not exist.
+    </p>
+
+    <a class="home-button" href="/">Back to TikTalk</a>
+
+    <div class="footer">A little chat goes a long way.</div>
+  </main>
 </body>
 </html>
